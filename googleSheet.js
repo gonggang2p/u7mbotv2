@@ -11,7 +11,7 @@ const SHEET_NAME = process.env.SHEET_NAME || 'Sheet1';
 const TIMEZONE = 'Asia/Bangkok';
 
 const auth = new GoogleAuth({
-  keyFile: '/etc/secrets/credentials.json', // ✅ ใช้ path ที่ Render จัดเก็บ Secret File
+  keyFile: '/etc/secrets/credentials.json',
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
